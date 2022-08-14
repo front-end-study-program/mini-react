@@ -1,2 +1,3 @@
 # mini-react
-mini 版本 react，熟悉 react 整体流程
+
+跟着国外大佬的[代码思路](https://pomb.us/build-your-own-react/)一步一步跟着实现 mini 版本的 react
