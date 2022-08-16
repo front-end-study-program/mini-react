@@ -58,12 +58,12 @@ const Didact = {
 //   </div>
 // )
 // transform
-// const element = Didact.createElement(
-//   "div",
-//   { id: "foo" },
-//   Didact.createElement("a", null, "bar"),
-//   Didact.createElement("b")
-// )
+const element = Didact.createElement(
+  "div",
+  { id: "foo" },
+  Didact.createElement("a", null, "bar"),
+  Didact.createElement("b")
+)
 
 
 const container = document.getElementById("root")
