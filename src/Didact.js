@@ -51,19 +51,19 @@ const Didact = {
 
 // 当 babel 编译 jsx 时会根据下面的注释使用我们定义的函数。
 /** @jsx Didact.createElement */
-// const element = (
-//   <div id="foo">
-//     <a>bar</a>
-//     <b />
-//   </div>
-// )
-// transform
-const element = Didact.createElement(
-  "div",
-  { id: "foo" },
-  Didact.createElement("a", null, "bar"),
-  Didact.createElement("b")
+const element = (
+  <div id="foo">
+    <a>bar</a>
+    <b />
+  </div>
 )
+// transform
+// const element = Didact.createElement(
+//   "div",
+//   { id: "foo" },
+//   Didact.createElement("a", null, "bar"),
+//   Didact.createElement("b")
+// )
 
 
 const container = document.getElementById("root")

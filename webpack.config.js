@@ -1,12 +1,17 @@
+const { ProgressPlugin } = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/Didact.js',
   mode: 'development',
+  stats: 'errors-only',
   devServer: {
-    compress: true,
+    client: {
+      progress: true
+    },
     port: 9000,
   },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -21,6 +26,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'mini-react',
       template: './public/index.html'
-    })
+    }),
+    new ProgressPlugin()
   ]
 }
