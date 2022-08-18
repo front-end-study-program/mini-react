@@ -4,3 +4,5 @@
 
 1. createElement 函数
 2. render 函数
+3. performUnitOfWork 工作单元处理函数
+4. fiberTree 数据结构
